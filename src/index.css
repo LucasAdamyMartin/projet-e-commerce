@@ -2,6 +2,7 @@
 
 @theme {
     --color-primary : #1F3E97;
+    --color-primary-dark : #18378F;
     --color-secondary : #FFB800;
     --font-pacifico : 'Pacifico';
 }

@@ -18,7 +18,7 @@ export function MainNav({mainNavClasses} : Readonly<MainNavProps>) {
     const menuClasses : string = "hidden max-lg:block size-7 text-primary";
     return (
         <nav className={`${mainNavdefaultClasses} ${mainNavClasses}`}>
-            <Title fontSize="40"/>
+            <Title fontSize="40" color="black"/>
             <Navigation
               className= {navigationClasses}
               textList={NAVIGATION_ITEMS}
