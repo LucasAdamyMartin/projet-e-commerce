@@ -2,5 +2,11 @@ import { useMenu } from "../context/MenuContext";
 
 export function Backdrop() {
   const { toggleMenu } = useMenu();
-  return <div className="fixed inset-0 bg-black/25" onClick={toggleMenu}></div>;
+  const backdropClasses : string = "fixed inset-0 bg-black/25";
+  return (
+    <button
+      className= {backdropClasses}
+      onClick={toggleMenu}
+    ></button>
+  );
 }

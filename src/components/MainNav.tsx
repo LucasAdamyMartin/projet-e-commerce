@@ -5,23 +5,28 @@ import { Navigation } from "./NavigationBar/Navigation";
 import { UserActions } from "./UserActions";
 import { MobileMenu } from "./MobileMenu";
 import { useMenu } from "../context/MenuContext";
+import { Title } from "./Title";
 
-type MainNavProps = {className? : string};
+type MainNavProps = {mainNavClasses? : string};
 
-export function MainNav({className} : Readonly<MainNavProps>) {
+export function MainNav({mainNavClasses} : Readonly<MainNavProps>) {
     const {isMenuOpen, toggleMenu} = useMenu();
-    const defaultClass = "flex justify-between items-center"
+    const mainNavdefaultClasses : string = "flex justify-between items-center";
+    const navigationClasses : string = "hidden lg:flex space-x-12 flex-grow ml-15";
+    const userActionsClasses : string = "space-x-2 justify-end ml-auto";
+    const authButtonsClasses : string = "hidden lg:flex space-x-4 col-span-2";
+    const menuClasses : string = "hidden max-lg:block size-7 text-primary";
     return (
-        <nav className={`${defaultClass} ${className}`}>
-            <h1 className="font-pacifico text-[40px]">vantela</h1>
+        <nav className={`${mainNavdefaultClasses} ${mainNavClasses}`}>
+            <Title fontSize="40"/>
             <Navigation
-              className="hidden lg:flex space-x-12 flex-grow ml-15"
+              className= {navigationClasses}
               textList={NAVIGATION_ITEMS}
             />
-            <UserActions className="space-x-2 justify-end ml-auto"/>
-            <AuthButtons className="hidden lg:flex space-x-4 col-span-2"/>
+            <UserActions userActionsClasses= {userActionsClasses}/>
+            <AuthButtons className= {authButtonsClasses}/>
             <Bars3Icon
-              className="hidden max-lg:block size-7 text-primary"
+              className= {menuClasses}
               onClick={toggleMenu}
             />
             {isMenuOpen && <MobileMenu />}

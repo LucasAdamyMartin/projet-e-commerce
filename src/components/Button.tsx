@@ -1,19 +1,12 @@
 type ButtonProps = { text: string; variant: string };
 export function Button({ text, variant }: Readonly<ButtonProps>) {
-  const variantStyle =
+  const variantClasses =
     variant === "outline"
-      ? { backgroundColor: "#1F3E97", color: "white" }
-      : {
-          color: "#1F3E97",
-          backgroundColor: "white",
-          border: "2px solid #1F3E97",
-        };
+      ? "bg-primary text-white"
+      : "bg-white text-primary border-primary border-2";
+  const buttonClasses: string =
+    "font-bold h-[39px] w-[78px] text-[12px] font-inter rounded-full";
   return (
-    <button
-      className="font-bold h-[39px] w-[78px] text-[12px] font-inter rounded-full"
-      style={variantStyle}
-    >
-      {text}
-    </button>
+    <button className={`${variantClasses} ${buttonClasses}`}>{text}</button>
   );
 }
