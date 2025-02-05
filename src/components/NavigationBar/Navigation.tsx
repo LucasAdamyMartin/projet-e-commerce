@@ -1,13 +1,13 @@
 import { NavigationPart } from "./NavigationPart";
 
-type NavigationProps = { className?: string; textList: string[] };
+type NavigationProps = { title?: string, listClasses?: string, listElementClasses?: string, textList: string[] };
 
-export function Navigation({ className, textList }: Readonly<NavigationProps>) {
-  const defaultClasses = "flex justify-center items-center";
+export function Navigation({ title, listClasses, listElementClasses, textList }: Readonly<NavigationProps>) {
   return (
-    <ul className={`${defaultClasses} ${className}`}>
+    <ul className={listClasses}>
+      {(title) ? <h3 className="text-[24px] font-bold mb-3">{title}</h3>: ""}
       {textList.map((element) => (
-        <NavigationPart key={element} text={element}></NavigationPart>
+        <NavigationPart key={element} text={element} listElementClasses={listElementClasses}></NavigationPart>
       ))}
     </ul>
   );

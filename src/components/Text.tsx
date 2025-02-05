@@ -1,8 +1,8 @@
+import { fontSizeVariants, fontStyleVariants, textColorVariants, TEXTS } from "../../utils/constants";
 
-type TextProps = {fontSize : string, color : string, text : string}
-export function Text({fontSize, color, text } : Readonly<TextProps>) {
-    const textClasses = `text-[${fontSize}px] text-${color}-500`;
+type TextProps = {fontSize : string, color : string, fontStyle : string, text :string};
+export function Text({fontSize, color, fontStyle,text} : Readonly<TextProps>) {
     return (
-        <p className={textClasses}>{text}</p>
+    <p className={`${fontSizeVariants[fontSize]}  ${fontStyleVariants[fontStyle]} ${textColorVariants[color]}`}>{TEXTS[text]}</p>
     )
 }
