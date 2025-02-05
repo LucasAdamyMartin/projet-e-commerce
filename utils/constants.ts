@@ -39,3 +39,8 @@ export const bgColorVariants: { [key: string]: string} = {
     secondary: "bg-secondary",
     gray : "bg-gray-100",
 }
+
+export const spaceVariants: { [key: string]: string} = {
+    medium : "space-x-10",
+    large : "space-x-100",
+}
