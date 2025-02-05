@@ -3,7 +3,8 @@ export const TEXTS: { [key: string]: string } = {
     SignOut : "Sign Out",
     Title : "vantela",
     CopyrightText : "Copyright 2023. All Right Reserverd",
-    NewsletterText : "Subscribe to our newsletter ..."
+    NewsletterText : "Subscribe to our newsletter ...",
+    SearchText : "Search ..."
 }
 
 export const NAVIGATION_ITEMS : string[] =  ["Home", "Sneakers", "Slip On", "Sandals", "Others"];
@@ -26,9 +27,15 @@ export const textColorVariants: { [key: string]: string} = {
     white: "text-white",
     primary: "text-primary",
     secondary: "text-secondary",
-    gray : "text-gray",
+    gray : "text-gray-200",
 }
 export const fontStyleVariants: { [key:string]: string} = {
     pacifico: "font-pacifico",
     inter: "font-inter"
+}
+export const bgColorVariants: { [key: string]: string} = { 
+    white: "bg-white",
+    primary: "bg-primary",
+    secondary: "bg-secondary",
+    gray : "bg-gray-100",
 }

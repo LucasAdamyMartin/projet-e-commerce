@@ -1,5 +1,5 @@
 import { TEXTS } from "../../utils/constants";
-import { Button } from "./Button/ButtonAuth";
+import { Button } from "./Button/ButtonClick";
 
 type AuthButtonsProps = {className? : string};
 

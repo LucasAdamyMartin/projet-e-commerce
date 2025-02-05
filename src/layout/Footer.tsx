@@ -2,7 +2,7 @@ import { Copyright } from "../components/Copyright";
 import { FooterElements } from "../components/FooterElements";
 
 export function Footer() {
-    const containerClasses : string = "flex flex-col min-h-screen bg-primary";
+    const containerClasses : string = "flex flex-col bg-primary";
     const WrapperClasses : string ="flex flex-col";
     return (
     <div className={containerClasses}>
