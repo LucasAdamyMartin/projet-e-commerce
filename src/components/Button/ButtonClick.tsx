@@ -1,12 +1,31 @@
-type ButtonProps = { text: string; variant: string };
-export function Button({ text, variant }: Readonly<ButtonProps>) {
+type ButtonProps = {
+  text: string;
+  variant: "outline" | "inline";
+  width: string;
+  height: string;
+  position?: string;
+  additionalClassName?: string;
+  onClick?: () => void;
+};
+export function ButtonClick({
+  text,
+  variant,
+  width,
+  height,
+  position,
+  additionalClassName,
+  onClick,
+}: Readonly<ButtonProps>) {
   const variantClasses =
     variant === "outline"
       ? "bg-primary text-white"
       : "bg-white text-primary border-primary border-2";
-  const buttonClasses: string =
-    "font-bold h-[39px] w-[78px] text-[12px] font-inter rounded-full";
   return (
-    <button className={`${variantClasses} ${buttonClasses}`}>{text}</button>
+    <button
+      className={`${variantClasses} ${width} ${height} ${position} ${additionalClassName}`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
   );
 }

@@ -1,10 +1,11 @@
 export const TEXTS: { [key: string]: string } = {
     SignIn : "Sign In",
-    SignOut : "Sign Out",
+    SignUp : "Sign Up",
     Title : "vantela",
     CopyrightText : "Copyright 2023. All Right Reserverd",
     NewsletterText : "Subscribe to our newsletter ...",
-    SearchText : "Search ..."
+    SearchText : "Search ...",
+    ShopNowText : "Shop Now",
 }
 
 export const NAVIGATION_ITEMS : string[] =  ["Home", "Sneakers", "Slip On", "Sandals", "Others"];
@@ -42,5 +43,5 @@ export const bgColorVariants: { [key: string]: string} = {
 
 export const spaceVariants: { [key: string]: string} = {
     medium : "space-x-10",
-    large : "space-x-100",
+    large : "space-x-90",
 }

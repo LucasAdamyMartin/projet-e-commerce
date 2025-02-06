@@ -6,7 +6,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 type ButtonInputProps = {bgColor : string, color : string, text : string, space: string, icon : string};
 
 export function ButtonInput ({bgColor, color, text, space, icon}: Readonly<ButtonInputProps>) {
-    const buttonClasses = `${bgColorVariants[bgColor]} p-3 pr-7 pl-7 flex flex-row items-center ${spaceVariants[space]} rounded-full`;
+    const buttonClasses = `${bgColorVariants[bgColor]} p-4 pr-7 pl-7 flex flex-row items-center ${spaceVariants[space]} rounded-full`;
     const iconSize = "size-6 text-primary";
     const iconInButton : JSX.Element = (icon) === "arrow" ? <ChevronRightIcon className={iconSize}/> : <MagnifyingGlassIcon className={iconSize}/>
     return (
