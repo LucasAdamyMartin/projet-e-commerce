@@ -1,11 +1,11 @@
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { NAVIGATION_ITEMS} from "../../utils/constants";
+import { NAVIGATION_ITEMS, TEXTS} from "../../../utils/constants";
 import { AuthButtons } from "./AuthButtons";
-import { Navigation } from "./NavigationBar/Navigation";
+import { Navigation } from "../NavigationBar/Navigation";
 import { UserActions } from "./UserActions";
 import { MobileMenu } from "./MobileMenu";
-import { useMenu } from "../context/MenuContext";
-import { Text } from "./Text";
+import { useMenu } from "../../context/MenuContext";
+import { Text } from "../Text";
 
 type MainNavProps = {mainNavClasses? : string};
 
@@ -18,7 +18,7 @@ export function MainNav({mainNavClasses} : Readonly<MainNavProps>) {
     const menuClasses : string = "hidden max-lg:block size-7 text-primary";
     return (
         <nav className={`${mainNavdefaultClasses} ${mainNavClasses}`}>
-            <Text fontSize="title" color="primary" fontStyle="pacifico" text="Title"/>
+            <Text fontSize="text-[46px]" color="text-primary" fontStyle="font-pacifico" text={TEXTS.Title} additionalClassName="flex"/>
             <Navigation
               listClasses= {navigationClasses}
               textList={NAVIGATION_ITEMS}

@@ -14,7 +14,7 @@ export function Text({
 }: Readonly<TextProps>) {
   return (
     <p
-      className={`${fontSize}  ${fontStyle} ${color} ${additionalClassName}`}
+      className={`${fontSize} ${fontStyle} ${color} ${additionalClassName}`}
     >
       {text}
     </p>

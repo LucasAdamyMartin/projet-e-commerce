@@ -6,6 +6,10 @@ export const TEXTS: { [key: string]: string } = {
     NewsletterText : "Subscribe to our newsletter ...",
     SearchText : "Search ...",
     ShopNowText : "Shop Now",
+    HomeTitleStrong : "PUBLIC HIGH",
+    HomeTitleNotStrong : "GUM NATURAL",
+    HomeParagraphe : "It was popularised in the 1960s with the release of Letraset sheets containing Lorem \n Ipsum passages, and more recently with desktop publishing",
+    BackgroundText : "New Arrivals"
 }
 
 export const NAVIGATION_ITEMS : string[] =  ["Home", "Sneakers", "Slip On", "Sandals", "Others"];

@@ -1,5 +1,5 @@
-import { Copyright } from "../components/Copyright";
-import { FooterElements } from "../components/FooterElements";
+import { Copyright } from "../components/Footer/Copyright";
+import { FooterElements } from "../components/Footer/FooterElements";
 
 export function Footer() {
     const containerClasses : string = "flex flex-col bg-primary";

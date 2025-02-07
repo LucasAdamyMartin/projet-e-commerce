@@ -1,5 +1,5 @@
-import { MainNav } from "../components/MainNav";
-import { TopBorder } from "../components/TopBorder";
+import { MainNav } from "../components/Header/MainNav";
+import { TopBorder } from "../components/Header/TopBorder";
 
 export function Header() {
   const containerClasses : string = "flex h-32 w-full justify-center items-center bg-white shadow-md";

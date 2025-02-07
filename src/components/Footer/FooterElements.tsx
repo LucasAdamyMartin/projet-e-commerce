@@ -1,7 +1,7 @@
-import { COMPANY_ITEMS, CONTACT_ITEMS, HELP_ITEMS, SOCIAL_MEDIA_ITEMS} from "../../utils/constants"
-import { ButtonInput } from "./Button/ButtonInput"
-import { Navigation } from "./NavigationBar/Navigation"
-import { Text } from "./Text"
+import { COMPANY_ITEMS, CONTACT_ITEMS, HELP_ITEMS, SOCIAL_MEDIA_ITEMS, TEXTS} from "../../../utils/constants"
+import { ButtonInput } from "../Button/ButtonInput"
+import { Navigation } from "../NavigationBar/Navigation"
+import { Text } from "../Text"
 
 export function FooterElements() {
     const firstPartClasses : string = "flex justify-between items-center p-10 flex-row ml-26 mr-26"
@@ -13,8 +13,8 @@ export function FooterElements() {
     return(
         <>
         <div className={firstPartClasses}>
-            <Text fontSize="title" color="white" fontStyle="pacifico" text="Title"/>
-            <ButtonInput bgColor="gray" color="gray" text="NewsletterText" space="medium" icon="arrow"/>
+            <Text fontSize="text-[46px]" color="text-white" fontStyle="font-pacifico" text={TEXTS.Title} additionalClassName="flex"/>
+            <ButtonInput bgColor="gray" color="gray" text={TEXTS.NewsletterText} space="medium" icon="arrow"/>
         </div>
         <div className={secondPartClasses}>
         <Navigation title="Company" textList={COMPANY_ITEMS} listClasses={companyListClasses} listElementClasses="underline mb-2"/>
