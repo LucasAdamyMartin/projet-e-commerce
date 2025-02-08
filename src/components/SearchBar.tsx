@@ -4,7 +4,7 @@ import { ButtonInput } from "./Button/ButtonInput";
 export function SearchBar() {
     return (
         <div className="flex items-center justify-center whitespace-nowrap p-10">
-                <ButtonInput bgColor="gray" color="gray" text={TEXTS.SearchText} space="large" icon="search"/>
+                <ButtonInput bgColor="bg-gray-100" color="text-gray-200" text={TEXTS.SearchText} space="space-x-100" icon="search"/>
             </div>
     )
 }

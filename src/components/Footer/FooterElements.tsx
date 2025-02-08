@@ -14,7 +14,7 @@ export function FooterElements() {
         <>
         <div className={firstPartClasses}>
             <Text fontSize="text-[46px]" color="text-white" fontStyle="font-pacifico" text={TEXTS.Title} additionalClassName="flex"/>
-            <ButtonInput bgColor="gray" color="gray" text={TEXTS.NewsletterText} space="medium" icon="arrow"/>
+            <ButtonInput bgColor="bg-gray-100" color="text-gray-200" text={TEXTS.NewsletterText} space="space-x-10" icon="arrow"/>
         </div>
         <div className={secondPartClasses}>
         <Navigation title="Company" textList={COMPANY_ITEMS} listClasses={companyListClasses} listElementClasses="underline mb-2"/>
