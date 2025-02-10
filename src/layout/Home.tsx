@@ -1,4 +1,5 @@
 import { BackgroundText } from "../components/Footer/BackgoundText";
+import { CollectionBanner } from "../components/Home/CollectionBanner";
 import { PosterImage } from "../components/Home/PosterImage";
 import { PosterText } from "../components/Home/PosterText";
 import { SelectionHome } from "../components/Home/SelectionHome";
@@ -8,7 +9,6 @@ export function Home() {
     const containerClasses = "flex flex-col";
     const containerPosterClasses = "flex bg-gray-100 overflow-hidden w-screen relative";
     const PosterClasses = "flex justify-between lg:flex-row-reverse flex-col-reverse w-full h-full";
-
 
     return (
         <div className={containerClasses}>
@@ -21,10 +21,8 @@ export function Home() {
                 <BackgroundText />
             </div>
             <SelectionHome/>
-            <div className="flex h-fit w-full justify-center items-center">
-                <div className="bg-amber-400 flex w-[50dvw] h-[70dvh]">
-
-                </div>
+            <div className="flex h-fit w-full justify-center items-center mb-10">
+                <CollectionBanner/>
             </div>
         </div>
     );
