@@ -4,12 +4,12 @@ import { Navigation } from "../NavigationBar/Navigation"
 import { Text } from "../Text"
 
 export function FooterElements() {
-    const firstPartClasses : string = "flex justify-between items-center p-10 flex-row ml-26 mr-26"
-    const secondPartClasses : string = "flex flex-row justify-between text-white"
-    const companyListClasses : string = "flex flex-col p-10 ml-28 text-left"
+    const firstPartClasses : string = "flex justify-between items-center p-10 lg:flex-row flex-col lg:ml-26 lg:mr-26"
+    const secondPartClasses : string = "flex lg:flex-row flex-col not-lg:ml-25 justify-between text-white"
+    const companyListClasses : string = "flex flex-col p-10 lg:ml-28 text-left"
     const helpListClasses : string = "flex flex-col p-10"
     const socialMediaListClasses : string = "flex flex-col p-10 justify-center"
-    const contactListClasses : string = "flex flex-col p-10 mr-28 justify-center" 
+    const contactListClasses : string = "flex flex-col p-10 lg:mr-28 justify-center" 
     return(
         <>
         <div className={firstPartClasses}>
