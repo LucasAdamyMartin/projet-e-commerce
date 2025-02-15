@@ -12,7 +12,7 @@ export function PosterText() {
                 <Text color="text-secondary" fontSize="text-[45px]" fontStyle="font-Inter" text={TEXTS.HomeTitleNotStrong} additionalClassName="flex whitespace-nowrap"/>
             </div>
             <Text color="text-gray-400" fontSize="text-[18px]" fontStyle="font-Inter" text={TEXTS.HomeParagraphe} additionalClassName="flex lg:ml-28 ml-10"/>
-            <ButtonClick text="Shop Now" variant="outline" height="h-[60px]" width="w-[160px]" position="flex" additionalClassName="justify-center items-center font-semibold text-[20px] rounded-full mt-5 ml-28"/>
+            <ButtonClick text="Shop Now" height="h-[60px]" width="w-[160px]" position="flex" additionalClassName="justify-center items-center font-semibold text-[20px] rounded-full mt-5 ml-28 bg-primary text-white"/>
         </div>
     )
 }

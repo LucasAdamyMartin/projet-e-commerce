@@ -1,8 +1,9 @@
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 type ButtonProps = {
   text: string;
-  variant: "outline" | "inline";
+  link?:string;
   width: string;
   height: string;
   position?: string;
@@ -13,7 +14,7 @@ type ButtonProps = {
 };
 export function ButtonClick({
   text,
-  variant,
+  link,
   width,
   height,
   position,
@@ -22,18 +23,24 @@ export function ButtonClick({
   additionalClassName,
   onClick,
 }: Readonly<ButtonProps>) {
-  const variantClasses =
-    variant === "outline"
-      ? "bg-primary text-white"
-      : "bg-white text-primary border-primary border-2";
   const iconInButton : JSX.Element = (icon) === "arrowRight" ? <ChevronRightIcon className={iconSize}/> : <ChevronDownIcon className={iconSize}/>;
-  return (
+  const buttonContent = (
+    <div className={`flex items-center justify-center ${width} ${height}`}>
+      <span>{text}</span>
+      {icon && iconInButton}
+    </div>
+  );
+
+  return link ? (
+    <NavLink to={link} className={`${width} ${height} ${position} ${additionalClassName} flex items-center justify-center`}>
+      {buttonContent}
+    </NavLink>
+  ) : (
     <button
-      className={`${variantClasses} ${width} ${height} ${position} ${additionalClassName}`}
+      className={`${width} ${height} ${position} ${additionalClassName} flex items-center justify-center`}
       onClick={onClick}
     >
-      {text}
-      {icon && iconInButton}
+      {buttonContent}
     </button>
   );
 }

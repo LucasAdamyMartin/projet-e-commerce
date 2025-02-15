@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* styles/global.css */
+@layer utilities {
+  /* Pour Chrome, Safari et Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Pour Firefox */
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE et Edge */
+  }
+}
+
+
 @theme {
   --color-primary : #1F3E97;
   --color-primary-dark : #18378F;
@@ -9,3 +24,4 @@
   --font-pacifico : "Pacifico", serif;
   --font-alice : "Alice", serif;
 }
+

@@ -21,7 +21,7 @@ export function MainNav({mainNavClasses} : Readonly<MainNavProps>) {
             <Text fontSize="text-[46px]" color="text-primary" fontStyle="font-pacifico" text={TEXTS.Title} additionalClassName="flex"/>
             <Navigation
               listClasses= {navigationClasses}
-              textList={NAVIGATION_ITEMS}
+              items={NAVIGATION_ITEMS}
             />
             <UserActions userActionsClasses= {userActionsClasses}/>
             <AuthButtons className= {authButtonsClasses}/>

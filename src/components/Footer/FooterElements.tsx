@@ -17,10 +17,10 @@ export function FooterElements() {
             <ButtonInput bgColor="bg-gray-100" color="text-gray-200" text={TEXTS.NewsletterText} space="space-x-10" icon="arrow"/>
         </div>
         <div className={secondPartClasses}>
-        <Navigation title="Company" textList={COMPANY_ITEMS} listClasses={companyListClasses} listElementClasses="underline mb-2"/>
-        <Navigation title="Help" textList={HELP_ITEMS} listClasses={helpListClasses} listElementClasses="underline mb-2"/>
-        <Navigation title="Social Media" textList={SOCIAL_MEDIA_ITEMS} listClasses={socialMediaListClasses} listElementClasses=" underline mb-2"/>
-        <Navigation title="Contact" textList={CONTACT_ITEMS} listClasses={contactListClasses} listElementClasses="mb-2"/>
+        <Navigation title="Company" items={COMPANY_ITEMS} listClasses={companyListClasses} listElementClasses="underline mb-2"/>
+        <Navigation title="Help" items={HELP_ITEMS} listClasses={helpListClasses} listElementClasses="underline mb-2"/>
+        <Navigation title="Social Media" items={SOCIAL_MEDIA_ITEMS} listClasses={socialMediaListClasses} listElementClasses=" underline mb-2"/>
+        <Navigation title="Contact Us" items={CONTACT_ITEMS} listClasses={contactListClasses} listElementClasses="mb-2"/>
         </div>
         </>
     )
