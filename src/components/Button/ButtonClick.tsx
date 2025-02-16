@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 type ButtonProps = {
   text: string;
-  link?:string;
+  link?: string;
   width: string;
   height: string;
   position?: string;
   icon?: "arrowRight" | "arrowDown" | "plus" | "min";
-  iconSize? : string
+  iconSize?: string;
   additionalClassName?: string;
   onClick?: () => void;
 };
@@ -23,7 +23,12 @@ export function ButtonClick({
   additionalClassName,
   onClick,
 }: Readonly<ButtonProps>) {
-  const iconInButton : JSX.Element = (icon) === "arrowRight" ? <ChevronRightIcon className={iconSize}/> : <ChevronDownIcon className={iconSize}/>;
+  const iconInButton: JSX.Element =
+    icon === "arrowRight" ? (
+      <ChevronRightIcon className={iconSize} />
+    ) : (
+      <ChevronDownIcon className={iconSize} />
+    );
   const buttonContent = (
     <div className={`flex items-center justify-center ${width} ${height}`}>
       <span>{text}</span>
@@ -32,7 +37,10 @@ export function ButtonClick({
   );
 
   return link ? (
-    <NavLink to={link} className={`${width} ${height} ${position} ${additionalClassName} flex items-center justify-center`}>
+    <NavLink
+      to={link}
+      className={`${width} ${height} ${position} ${additionalClassName} flex items-center justify-center`}
+    >
       {buttonContent}
     </NavLink>
   ) : (
