@@ -9,7 +9,8 @@ export const TEXTS: { [key: string]: string } = {
     HomeTitleStrong : "PUBLIC HIGH",
     HomeTitleNotStrong : "GUM NATURAL",
     HomeParagraphe : "It was popularised in the 1960s with the release of Letraset sheets containing Lorem \n Ipsum passages, and more recently with desktop publishing",
-    BackgroundText : "New Arrivals"
+    BackgroundText : "New Arrivals",
+    ConditionsText : "By pressing the Register button means that you have agreed to the terms and conditions of the application",
 }
 
 export const NAVIGATION_ITEMS : {text : string, link? : string}[] =  [{text : "Home", link: "/"}, {text : "Sneakers"}, {text : "Slip On"}, {text : "Sandals", link: "/sandals"}, {text : "Others"}];
