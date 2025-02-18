@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lucasadamymartin.github.io/nom-du-repo/",
+  "homepage": "https://lucasadamymartin.github.io/projet-e-commerce/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
