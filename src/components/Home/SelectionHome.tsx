@@ -11,7 +11,7 @@ export function SelectionHome() {
   const products: product[] = Array(6).fill({
     name: "Vantela Republic Low Black Natural",
     price: 159,
-    imgSrc: `${import.meta.env.BASE_URL}img/chaussure1.png`,
+    imgSrc: "img/chaussure1.png",
     discount: 10,
     star: 5,
   });
