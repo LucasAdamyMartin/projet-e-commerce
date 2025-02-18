@@ -15,7 +15,7 @@ function App() {
 
   return ( 
     
-    <BrowserRouter>
+    <BrowserRouter basename="/projet-e-commerce">
       <MenuContextProvider>
         <Header />
       </MenuContextProvider>
