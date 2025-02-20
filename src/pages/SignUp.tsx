@@ -1,10 +1,10 @@
 import { addressFields, contactFields } from "../../utils/constants";
 import { SubmitButton } from "../components/Button/SubmitButton";
 import { Form } from "../components/Form/Form";
-import { ConditionsButton } from "../components/SignUp/ConditionsButton";
-import { Poster } from "../components/SignUp/Poster";
-import { SignWithOthers } from "../components/SignUp/SignWithOthers";
-import { Title } from "../components/SignUp/Title";
+import { ConditionsButton } from "../components/Sign/ConditionsButton";
+import { Poster } from "../components/Sign/Poster";
+import { SignWithOthers } from "../components/Sign/SignWithOthers";
+import { Title } from "../components/Sign/Title";
 
 export function SignUp() {
   const handleRegisterSubmit = (data: Record<string, string>) => {
@@ -15,7 +15,7 @@ export function SignUp() {
   };
   return (
     <div className="flex flex-col lg:ml-[180px] lg:mr-[180px] p-8 space-y-6">
-      <Title />
+      <Title title="Sign Up"/>
       <div className="flex flex-row space-x-10">
         <div className="flex flex-col flex-grow space-y-6">
           <div className="flex border-b-2 border-gray-300 pb-6">
@@ -53,9 +53,9 @@ export function SignUp() {
             width="w-full"
             additionalClassName="rounded-lg bg-primary text-white text-[24px] font-semibold"
           />
-          <SignWithOthers />
+          <SignWithOthers text="Sign Up"/>
         </div>
-        <Poster />
+        <Poster urlImage="lg:bg-[url('img/signUp.png')]"/>
       </div>
     </div>
   );

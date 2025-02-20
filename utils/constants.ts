@@ -21,7 +21,7 @@ export interface Field {
     placeholder? : string;
   }
   
-  export const contactFields: Field[] = [
+export const contactFields: Field[] = [
     { name: "name", label: "Full name", type: "text", required: true, placeholder: "Jean Dupont" },
     { name: "username", label: "Username", type: "text", required: true, placeholder: "jdupont123" },
     { name: "birth", label: "Date of birth", type: "date", required: true },
@@ -36,6 +36,11 @@ export const addressFields: Field[] = [
     { name: "state", label: "State", type: "text", required: true, placeholder: "Île-de-France" },
     { name: "country", label: "Country", type: "text", required: true, placeholder: "France" },
 ];
+
+export const signInFields : Field[] = [
+    {name:"user", label: "Username or Email", type:"text", required:true, placeholder: "jeandupont@example.com"},
+    {name:"password", label: "Password", type:"password", required:true}
+]
 
 
 

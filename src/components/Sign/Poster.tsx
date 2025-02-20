@@ -1,9 +1,9 @@
 import { ButtonNavigation } from "../Button/ButtonNavigation";
 import { Text } from "../Text";
 
-export function Poster() {
+export function Poster({urlImage} : Readonly<{urlImage : string}>) {
     const containerClasses =
-    "flex flex-col rounded-2xl lg:bg-[url('/img/img_SignUp.png')] hidden lg:flex bg-cover bg-center w-[442px] h-[512px]";
+    `flex flex-col rounded-2xl ${urlImage} hidden lg:flex bg-cover bg-center w-[442px] h-[512px]`;
 
     return(
         <div className={containerClasses}>
