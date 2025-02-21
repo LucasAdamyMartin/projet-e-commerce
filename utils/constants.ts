@@ -42,6 +42,21 @@ export const signInFields : Field[] = [
     {name:"password", label: "Password", type:"password", required:true}
 ]
 
+export type product = {
+    name: string;
+    price: number;
+    discount?: number;
+    star: number;
+    imgSrc: string;
+  };
+
+export const products: product[] = Array(6).fill({
+    name: "Vantela Republic Low Black Natural",
+    price: 159,
+    imgSrc: "bg-[url('img/chaussure1.png')]",
+    discount: 10,
+    star: 5,
+  });
 
 
 export const NAVIGATION_ITEMS : {text : string, link? : string}[] =  [{text : "Home", link: "/"}, {text : "Sneakers"}, {text : "Slip On"}, {text : "Sandals", link: "/sandals"}, {text : "Others"}];

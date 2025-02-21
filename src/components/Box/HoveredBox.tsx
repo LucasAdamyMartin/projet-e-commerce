@@ -1,11 +1,11 @@
 import { StarIcon } from "@heroicons/react/24/solid";
-import { ButtonClick } from "../../Button/ButtonClick";
-import { product } from "../SelectionHome";
+import { ButtonClick } from "../Button/ButtonClick";
+import { product } from "../../../utils/constants";
 
 type HoveredBoxType = { product: product };
 
 export function HoveredBox({ product }: Readonly<HoveredBoxType>) {
-  const containerClasses = "flex flex-row justify-between items-center pt-5 ";
+  const containerClasses = "flex flex-row justify-between items-center pt-5 pl-4 pr-4 w-full";
   return (
     <div className={containerClasses}>
       <div className="flex flex-row space-x-1">

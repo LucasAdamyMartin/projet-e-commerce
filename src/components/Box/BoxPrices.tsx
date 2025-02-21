@@ -1,5 +1,5 @@
-import { Text } from "../../Text";
-import { product } from "../SelectionHome";
+import { product } from "../../../utils/constants";
+import { Text } from "../Text";
 
 type boxPricesType = { product: product };
 export function BoxPrices({ product }: Readonly<boxPricesType>) {
@@ -7,7 +7,7 @@ export function BoxPrices({ product }: Readonly<boxPricesType>) {
     ? ((product.price * 100) / (100 - product.discount)).toFixed(3)
     : null;
   return (
-    <div className="flex flex-col self-start">
+    <div className="flex flex-col self-start pr-4 pl-4">
       <Text
         color="text-black"
         fontSize="text-[18px]"
