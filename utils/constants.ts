@@ -58,6 +58,35 @@ export const products: product[] = Array(6).fill({
     star: 5,
   });
 
+export const productsMen: product[] = Array(15).fill({
+    name: "Jackson Ask 6JP Men’s Sandals  - Navy",
+    price: 199,
+    imgSrc: "bg-[url('img/sandalsMen.png')]",
+    discount: 10,
+    star: 4.5,
+});
+
+export const productsWomen: product[] = Array(15).fill({
+  name: "Jackson Axel 1JT Womens Sandals - Almond",
+  price: 299,
+  imgSrc: "bg-[url('img/womenShoes.png')]",
+  discount: 40,
+  star: 4.5,
+});
+
+export const productsKids: product[] = Array(15).fill({
+  name: "Jackson Kids Miko 1ZT Boys Sandals - Light Grey",
+  price: 263,
+  imgSrc: "bg-[url('img/kidsShoes.png')]",
+  discount: 56,
+  star: 4.3,
+});
+
+export const categories = [
+    { key: "men", title: "Man's", products: productsMen },
+    { key: "women", title: "Women's", products: productsWomen },
+    { key: "kids", title: "Kid's", products: productsKids}
+];
 
 export const NAVIGATION_ITEMS : {text : string, link? : string}[] =  [{text : "Home", link: "/"}, {text : "Sneakers"}, {text : "Slip On"}, {text : "Sandals", link: "/sandals"}, {text : "Others"}];
 

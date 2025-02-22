@@ -1,4 +1,4 @@
-import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router-dom";
 
 type ButtonProps = {
@@ -7,11 +7,25 @@ type ButtonProps = {
   width: string;
   height: string;
   position?: string;
-  icon?: "arrowRight" | "arrowDown" | "plus" | "min";
+  icon?: "arrowRight" | "arrowUp" | "arrowDown" | "plus" | "min";
   iconSize?: string;
   additionalClassName?: string;
   onClick?: () => void;
 };
+
+const getIcon = (icon?: string, iconSize?: string) => {
+  switch (icon) {
+    case "arrowRight":
+      return <ChevronRightIcon className={iconSize} />;
+    case "arrowDown":
+      return <ChevronDownIcon className={iconSize} />;
+    case "arrowUp":
+      return <ChevronUpIcon className={iconSize} />;
+    default:
+      return null; 
+  }
+};
+
 export function ButtonClick({
   text,
   link,
@@ -23,12 +37,8 @@ export function ButtonClick({
   additionalClassName,
   onClick,
 }: Readonly<ButtonProps>) {
-  const iconInButton: JSX.Element =
-    icon === "arrowRight" ? (
-      <ChevronRightIcon className={iconSize} />
-    ) : (
-      <ChevronDownIcon className={iconSize} />
-    );
+  const iconInButton = getIcon(icon, iconSize);
+
   const buttonContent = (
     <div className={`flex items-center justify-center ${width} ${height}`}>
       <span>{text}</span>
