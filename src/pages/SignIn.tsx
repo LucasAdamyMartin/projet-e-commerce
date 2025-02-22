@@ -31,7 +31,7 @@ export function SignIn() {
           />
           <SignWithOthers text="Sign In" />
         </div>
-        <Poster urlImage="lg:bg-[url('img/signIn.png')]" firstText="Fast shipping" secondText="best for" yellowText="you"/>
+        <Poster urlImage="lg:bg-[url('/img/signIn.png')]" firstText="Fast shipping" secondText="best for" yellowText="you"/>
       </div>
     </div>
   );

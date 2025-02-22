@@ -53,7 +53,7 @@ export type product = {
 export const products: product[] = Array(6).fill({
     name: "Vantela Republic Low Black Natural",
     price: 159,
-    imgSrc: "bg-[url('img/chaussure1.png')]",
+    imgSrc: "bg-[url('/img/chaussure1.png')]",
     discount: 10,
     star: 5,
   });
@@ -61,7 +61,7 @@ export const products: product[] = Array(6).fill({
 export const productsMen: product[] = Array(15).fill({
     name: "Jackson Ask 6JP Men’s Sandals  - Navy",
     price: 199,
-    imgSrc: "bg-[url('img/sandalsMen.png')]",
+    imgSrc: "bg-[url('/img/sandalsMen.png')]",
     discount: 10,
     star: 4.5,
 });
@@ -69,7 +69,7 @@ export const productsMen: product[] = Array(15).fill({
 export const productsWomen: product[] = Array(15).fill({
   name: "Jackson Axel 1JT Womens Sandals - Almond",
   price: 299,
-  imgSrc: "bg-[url('img/womenShoes.png')]",
+  imgSrc: "bg-[url('/img/womenShoes.png')]",
   discount: 40,
   star: 4.5,
 });
@@ -77,7 +77,7 @@ export const productsWomen: product[] = Array(15).fill({
 export const productsKids: product[] = Array(15).fill({
   name: "Jackson Kids Miko 1ZT Boys Sandals - Light Grey",
   price: 263,
-  imgSrc: "bg-[url('img/kidsShoes.png')]",
+  imgSrc: "bg-[url('/img/kidsShoes.png')]",
   discount: 56,
   star: 4.3,
 });
