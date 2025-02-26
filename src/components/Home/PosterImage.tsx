@@ -2,9 +2,8 @@ import { ButtonNavigation } from "../Button/ButtonNavigation";
 import { Image } from "../Image";
 
 export function PosterImage() {
-  const containerClasses = "flex flex-col w-full lg:h-full";
   return (
-    <div className={containerClasses}>
+    <div className="flex flex-col w-full lg:h-full">
       <Image
         src="/img/chaussure_home.png"
         alt="chaussure home"

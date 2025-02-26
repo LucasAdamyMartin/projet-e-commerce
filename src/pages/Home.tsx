@@ -8,15 +8,12 @@ import { SearchBar } from "../components/SearchBar";
 import { SelectionBar } from "../components/SelectionBar";
 
 export function Home() {
-    const containerClasses = "flex flex-col";
-    const containerPosterClasses = "flex bg-gray-100 overflow-hidden w-screen relative";
-    const PosterClasses = "flex justify-between lg:flex-row-reverse flex-col-reverse w-full h-full";
-
     return (
-        <div className={containerClasses}>
+    <div className="flex justify-center">
+        <div className="flex flex-col">
             <SearchBar />
-            <div className={containerPosterClasses}>
-                <div className={PosterClasses}>
+            <div className="flex justify-center bg-gray-100 overflow-hidden w-screen relative">
+                <div className="flex lg:flex-row-reverse flex-col-reverse w-[80dvw] h-full">
                     <PosterImage />
                     <PosterText />
                 </div>
@@ -34,5 +31,6 @@ export function Home() {
                 <CollectionBanner/>
             </div>
         </div>
+    </div>
     );
 }
