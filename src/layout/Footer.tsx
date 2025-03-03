@@ -1,15 +1,14 @@
-import { Copyright } from "../components/Footer/Copyright";
 import { FooterElements } from "../components/Footer/FooterElements";
 
 export function Footer() {
-    const containerClasses : string = "flex flex-col bg-primary";
-    const WrapperClasses : string ="flex flex-col";
     return (
-    <div className={containerClasses}>
-        <div className={WrapperClasses}>
+    <div className= "flex flex-col bg-primary">
+        <div className="flex flex-col">
             <FooterElements />
         </div>
-        <Copyright />
+        <div className= "bg-primary-dark text-center p-4 text-white">
+            Copyright 2023. All Right Reserverd
+        </div>    
     </div>
 )
 }

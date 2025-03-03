@@ -2,7 +2,6 @@ export const TEXTS: { [key: string]: string } = {
     SignIn : "Sign In",
     SignUp : "Sign Up",
     Title : "vantela",
-    CopyrightText : "Copyright 2023. All Right Reserverd",
     NewsletterText : "Subscribe to our newsletter ...",
     SearchText : "Search ...",
     ShopNowText : "Shop Now",

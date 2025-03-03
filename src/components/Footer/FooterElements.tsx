@@ -26,7 +26,7 @@ export function FooterElements() {
           fontSize="text-[46px]"
           color="text-white"
           fontStyle="font-pacifico"
-          text={TEXTS.Title}
+          text="vantela"
           additionalClassName="flex"
         />
         <ButtonInput
